@@ -11,8 +11,8 @@ const productoSchema = new Schema({
     precio:{
         type:Number,
         required: true,
-        minLength:2,
-        maxLength:4
+        minLength:50,
+        maxLength:10000
     },
     imagen:{
         type:String,
@@ -34,7 +34,7 @@ const productoSchema = new Schema({
     categoria:{
         type: String,
         required:true,
-        enum: ['Infusion','Bebida fria','Batidos']
+        enum: ['Infusion','Bebida_Fria','Batidos']
     }
 })
 
