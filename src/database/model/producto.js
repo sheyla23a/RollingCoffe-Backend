@@ -11,8 +11,8 @@ const productoSchema = new Schema({
     precio:{
         type:Number,
         required: true,
-        minLength:50,
-        maxLength:10000
+        minLength:2,
+        maxLength:4
     },
     imagen:{
         type:String,
